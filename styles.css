@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+/* Style for main container */
+#container {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #000;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Pseudo-element before the container content */
+#container::before {
+  content: "⚡ Special Text Before ⚡ ";
+  color: #f00; /* red color */
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Pseudo-element after the container content */
+#container::after {
+  content: " 🚀 Special Text After 🚀";
+  color: #f00; /* red color */
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
